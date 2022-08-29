@@ -1,0 +1,64 @@
+.routCont {
+  .el-breadcrumb {
+    padding-left: 20px;
+    font-size: 12px;
+  }
+}
+.table {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  //条件搜索
+  .search {
+    display: flex;
+    padding: 20px;
+    border-bottom: 1px solid #f5f5f5;
+    background-color: #FFFFFF;
+    margin: 20px 0;
+    position: relative;
+    .el-form {
+      .el-form-item {
+        width: 230px;
+        margin-bottom: 0;
+        .el-form-item__content {
+          .el-input, .el-select {
+            width: 230px;
+          }
+        }
+      }
+      .el-form-item:last-child {
+        position: absolute;
+        width: auto;
+        bottom: 20px;
+        right: 20px;
+      }
+    }
+  }
+  //主体内容
+  .consequence {
+    background-color: #FFFFFF;
+    padding: 20px;
+    .button {
+      margin-bottom: 10px;
+    }
+    .el-table{
+      .el-table__header-wrapper {
+        >table {
+          >thead {
+            color: #000000;
+            font-size: 14px;
+            >tr {
+              >th {
+                background-color: #FAFAFA;
+              }
+            }
+          }
+        }
+      }
+    }
+    .el-pagination {
+      text-align: right;
+      margin-top: 10px;
+    }
+  }
+}
